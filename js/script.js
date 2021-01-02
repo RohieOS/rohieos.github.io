@@ -28,10 +28,10 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typed", {
-        strings: [" "],
+        strings: ["Speed", "Performance","Battery", "Features","Power user"],
         typeSpeed: 50,
         loop: true,
-        startDelay: 400,
+        startDelay: 100,
         showCursor: false
 
     });
