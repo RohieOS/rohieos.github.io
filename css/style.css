@@ -5,14 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Comfortaa";
+  scroll-behavior: smooth;
   font-size: 14px;
   color: #fff;
-  background: url("../images/bg-pattern.png"), linear-gradient(#6f0000, #00416A, #200122);
-  background-color: #0F2027;
-  background-size: auto;
+  /* background: url("../mages/bg-pattern.png"), linear-gradient(#063042, #063042, #063042); */
+  background-color: #063042;
   letter-spacing: 1px;
 }
 
@@ -21,7 +23,6 @@ body {
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .slides-navigation {
@@ -68,8 +69,9 @@ body {
 }
 
 .TitleMessage .heading .sub {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
+  text-indent: -7%;
 }
 
 .about_profile {
@@ -117,6 +119,7 @@ body {
   margin-bottom: 0px;
   padding-bottom: 10px;
   font-size: 16px;
+  text-align: center;
 }
 
 .featuresSection {
@@ -178,9 +181,9 @@ body {
 
 .squareInnerContainer {
   position: relative;
-  padding: 50px 15px 35px;
+  padding: 40px 10px 30px;
   text-align: center;
-  border: 2px solid #444;
+  border: 2px solid rgb(110, 148, 194);
   border-top: none;
 }
 
@@ -189,7 +192,7 @@ body {
   position: absolute;
   top: 0px;
   width: 30%;
-  border-bottom: 2px solid #444;
+  border-bottom: 2px solid rgb(110, 148, 194);
 }
 
 .squareInnerContainer:before {
@@ -228,7 +231,7 @@ body {
   height: 60px;
   font-size: 45px;
   margin-left: -20%;
-  color: #444;
+  color: rgb(110, 148, 194);
 }
 
 .statsSection {
@@ -657,3 +660,27 @@ body {
 .creditSection p {
   margin: 0;
 }
+.arrow {
+  text-align: center;
+  margin: 2% 0;
+  color: #f69f9f;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.ass { color: #9fcdf6; text-decoration: none; align-content: center;}
