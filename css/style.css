@@ -11,8 +11,7 @@ body {
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-shadow: 4px 2px 2px rgb(0, 0, 0);
-  background: url("../images/bg-pattern.png"), linear-gradient(#a38d12, #00416A, #200122);
-  background-color: #000000;
+  background: linear-gradient(#a38d12, #00578d, #000000);
   background-size: auto;
   letter-spacing: 1px;
 }
@@ -22,7 +21,8 @@ body {
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
+  
 }
 
 .slides-navigation {
@@ -521,11 +521,12 @@ body {
 }
 
 #navigation {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 10px;
   z-index: 100;
   width: 100%;
   margin-bottom: -4px;
+  backdrop-filter: blur(20px)
 }
 
 #navigation li {
@@ -577,7 +578,7 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .loader .inner {

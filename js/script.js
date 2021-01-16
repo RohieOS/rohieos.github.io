@@ -8,7 +8,7 @@ $(window).on("load", function () {
     $container.isotope({
         filter: '*',
         animationOptions: {
-            duration: 5000000,
+            duration: 5000,
             easing: 'linear',
             queue: false
         }
@@ -43,8 +43,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         
-
-        if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+        if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 0) {
             $(".counter").each(function () {
                 var element = $(this);
                 var endVal = parseInt(element.text());
