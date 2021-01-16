@@ -1,14 +1,14 @@
 $(window).on("load", function () {
 
-    $(".loader .inner").fadeOut(600, function () {
-        $(".loader").fadeOut(750);
+    $(".loader .inner").fadeOut(1000, function () {
+        $(".loader").fadeOut(2000);
     });
 
     var $container = $('.items');
     $container.isotope({
         filter: '*',
         animationOptions: {
-            duration: 1500,
+            duration: 5000000,
             easing: 'linear',
             queue: false
         }
@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $('#slides').superslides({
         animation: 'slide',
-        play: 3200,
+        play: 32000,
 		animation_speed: 'normal',
 		inherit_width_from: window,
 		inherit_height_from: window,
@@ -28,11 +28,12 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Speed", "Performance","Battery", "Features","Power user"],
+        strings: ["Speed", "Performance","Battery", "Features","Power user", "It's Rohie OS..."],
         typeSpeed: 50,
-        loop: true,
-        startDelay: 100,
+        loop: false,
+        startDelay: 3000,
         showCursor: false
+            
 
     });
 
@@ -41,6 +42,7 @@ $(document).ready(function () {
     var countUpFinished = false;
 
     $(window).scroll(function () {
+        
 
         if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
             $(".counter").each(function () {

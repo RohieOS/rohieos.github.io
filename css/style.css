@@ -9,9 +9,10 @@
 body {
   font-family: "Comfortaa";
   font-size: 14px;
-  color: #fff;
-  background: url("../images/bg-pattern.png"), linear-gradient(#6f0000, #00416A, #200122);
-  background-color: #0F2027;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 2px 2px rgb(0, 0, 0);
+  background: url("../images/bg-pattern.png"), linear-gradient(#a38d12, #00416A, #200122);
+  background-color: #000000;
   background-size: auto;
   letter-spacing: 1px;
 }
@@ -571,7 +572,7 @@ body {
 .loader {
   width: 100%;
   height: 100%;
-  background: linear-gradient(#283c86, #45a247);
+  background: linear-gradient(#000000, #070707);
   background-color: #ffffff00;
   position: fixed;
   top: 0px;
@@ -587,7 +588,7 @@ body {
 
 .progress, .progress-bar {
   height: 1.2rem;
-  transition: .3s;
+  transition: .10s;
 }
 
 .progress-bar:hover {
