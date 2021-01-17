@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $('#slides').superslides({
         animation: 'slide',
-        play: 32000,
+        play: 320,
 		animation_speed: 'normal',
 		inherit_width_from: window,
 		inherit_height_from: window,
