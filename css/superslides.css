@@ -5,6 +5,12 @@
   display: none;
 
 }
+#slides .typed {
+  font-family: "Comfortaa";
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 3px 7px rgb(0, 0, 0);
+}
 #slides .scrollable {
   *zoom: 1;
   position: relative;
