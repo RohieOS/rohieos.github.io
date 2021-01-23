@@ -3,16 +3,6 @@
 }
 #slides .slides-container {
   display: none;
-
-}
-#slides .typed {
-  font-family: "Comfortaa";
-  font-size: 48px;
-  color: rgb(255, 255, 255);
-  text-shadow: 6px 5px 4px rgb(0, 0, 0);
- 
-
-  
 }
 #slides .scrollable {
   *zoom: 1;
@@ -32,7 +22,7 @@
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
-  z-index: 0;
+  z-index: 3;
   top: 46%;
   width: 100%;
 }
@@ -49,11 +39,10 @@
 
 .slides-pagination {
   position: absolute;
-  z-index: 0;
+  z-index: 3;
   bottom: 0;
   text-align: center;
   width: 100%;
-  
 }
 .slides-pagination a {
   border: 2px solid #222;

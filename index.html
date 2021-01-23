@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Rohie OS</title>
+    <title>RohieOS</title>
     <link rel="shortcut icon" type="image/png" href="images/icons/fevicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content=#000000>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171600426-1"></script>
 <script>
@@ -21,44 +21,38 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-171600426-1');
-
-});
 </script>
- 
+<style>
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }        
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 10px rgb(0, 0, 0); 
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4c99c9; 
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3079a7; 
+    }
+    </style>
 </head>
 
 <body>
-    <div class="loader">
-        <div class="inner"></div>
-    </div>
-
-    <div id="slides">
-        <div class="overlay">
-        </div>
-        <div class="slides-container">
-        </div>
-        <div class="TitleMessage">
-            <div class="heading">
-                <p class="main" ></p>
-                <p class="sub typed"></p>
-            </div>
-        </div>
-
-        
-    </div>
-
+ 
     <nav id="navigation" class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#"></a>
-       <a class="navbar-brand js-scroll-trigger" href="#about">Rohie OS 😼</a>
+       <a class="navbar-brand js-scroll-trigger" href="#about">RohieOS 😼</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+       
         <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#slides">Gallery <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">Home</a>
                 </li>
@@ -76,79 +70,66 @@
                 </li>
             </ul>
         </div>
+    </div>
     </nav>
 
-    <section id="about" class="about_profile">
+    <section id="about" class="about_profile" >
         <div class="container">
-            <img class="aboutImage" src="images/profile.png" alt="">
+            <img class="aboutImage" src="images/profile1.png" alt="">
         </div>
         <div class="heading">
-            <h1>Rohie OS</h1>
+            <h1>RohieOS</h1>
         </div>
         <div class="sub_heading">
-            <h5>Powered By Android.</h5>
+            <div id="powered"><img src="images/powered-by-android-1.svg" width="200px"></div>
+            
         </div>
         </div>
     </section>
     <section class="about_text">
-        <div class="container">
-        	<style>
-   .shadowtext {
-    text-shadow: 1px 1px 2px black, 0 0 1em black; /* Параметры тени */
-    color: white; /* Белый цвет текста */
-    font-size: 2em; /* Размер надписи */
-   }
-  </style>
-            <h3>Hey There,</h3>
-            <b><p class="about_para">Starting With Android 11 R, We Gonna Start Working On Rohie OS With Fresh New Look  and Upto Date Features with Minimalistic sources.</b>
-				<p>Cat Lovers Will Love This Rom as Everything In it Will Be Based on Kittens 😼. t.me/rohieos</p>
-			    <p>This is an replacement to SlimAOSP which got abandoned before a stable release. So, after getting so much love for slimaosp i thought of reviving the rom again with fresh new look and features. t.me/SlimAOSP</p>
-				<center><p>Thanks.</p>
-				<p>Stay Safe.</p></center>
+        <div class="container justify-content-center">
+            
+            <h4 style="text-align: center;">Hey There,</h4>
+            <p class="about_para">Starting With Android 11 R, We Gonna Start Working On RohieOS With Fresh New Look  and Upto Date Features with Minimalistic sources.
+				<p class="about_para">Cat Lovers Will Love This Rom as Everything In it Will Be Based on Kittens 😼.</p>
+			    <p class="about_para">This is an replacement to SlimAOSP which got abandoned before a stable release. So, after getting so much love for slimaosp i thought of reviving the rom again with fresh new look and features. t.me/SlimAOSP</p>
+				<p class="about_para">Thanks.</p>
+				<p class="about_para">Stay Safe.</p>
         </div>
     </section>
 
     <div id="features" class="featuresSection">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <hr class="line" width="40%">
                     <h2>Features</h2>
-                    <p>Currently this rom has been broughtup with Aosp base and will have more caf stuff included which will promise raw performance without impacting the battery life</p>
-                    <p>This rom will have features from all the roms and provide one best user experience</p>
+                    <p>Currently this ROM has been broughtup with Aosp base and will have more caf stuff included which will promise raw performance without impacting the battery life</p>
+                    <p>This ROM will have features from all the ROMs and provide one best user experience</p>
                     <li>wip</li>
                     <li>wip</li>
                     <li>wip</li>
                 </div>
-            </div>
-        </div>
-    </div>
+
 
     <div id="download" class="basic-x container-fluid">
-        <div class="container">
-            <div class="container">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <h3 class="test-center">Downloads</h3> <br>
-                            <div style="overflow-y: auto; overflow-x: auto;">
-                                <table style="width:100%">
-                                    <tr class="col-lg-2">
-                                        
-                                        <td style="text-align: center;"><a href="https://www.motorola.in/smartphones-moto-g7-power/p" class="btnsl2" target="_blank" style="font-size: inherit; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Moto G7 Power</a></td>
-                                        <td style="text-align: center;"><a href="https://sourceforge.net/projects/legionrom/files/ocean/" class="btnsl2d" target="_blank" style="font-size: inherit; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Download</a></td>
-                                    </tr>
-                                </table>
-                            </div>
-                </div>
+        <h3 class="test-center">Downloads</h3><br>
+        <div id="phones">
+            <div id="phone" class="jasmine" onclick="location.href='https://sourceforge.net/projects/rohieos/files/r/jasmine_sprout/';" style="cursor: pointer;" target="_blank">
+                <br><br><img src="images/jasmine.png" width="150px"><br><br>
+                <h3 class= "phone_name">Xiaomi MI A2 </h3><br>
+                jasmine_sprout
+            </div>
+            <div id="phone" class="wayne" onclick="location.href='https://sourceforge.net/projects/rohieos/files/r/wayne/';" style="cursor: pointer;" target="_blank">
+                <br><br><img src="images/wayne.png" width="150px" ><br><br>
+                <h3 class= "phone_name">Xiaomi MI 6X </h3><br>
+                wayne
             </div>
         </div>
     </div>
+    
     <div id="stats" class="statsSection">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <hr class="line" width="40%">
-                    <h2>Rom Stats</h2>
+                    
+                    <h3>ROM Stats</h2>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="squareItem">
@@ -170,7 +151,7 @@
                                 <i class="fas fa-mobile"></i>
                             </div>
                             <div class="squareContent">
-                                <h2> <span class="counter">0</span><span>+</span></h2>
+                                <h2> <span class="counter">2</span><span>+</span></h2>
                                 <h3>Devices</h3>
                             </div>
                         </div>
@@ -207,12 +188,12 @@
     </div>
     <div id="contact" class="contactSection">
         <div class="col-md-12 text-center">
-            <hr class="line" width="40%">
-            <h2>Email US!</h2>
+            
+            <h2>Contact us</h2>
             <a href="mailTo:" class="mailButton">Email</a>
         </div>
         <div class="social">
-            <p>Follow Rohie Os!</p>
+            <p>Follow RohieOS</p>
             <a href="https://www.github.com/rohieos" class="github" target="_blank" rel="noopener"><i
                     class="fab fa-github fa-2x"></i></a>
             <a href="https://t.me/rohieos" class="telegram" target="_blank" rel="noopener"><i
@@ -223,16 +204,21 @@
         <div class="col-md-12 text-center">
             <p>Designed with <span class="heart">&hearts;</span> by <a
                     href="https://github.com/manish4586" target="_blank" rel="noopener">Manish
-                   Sarkar</a></p>
-			<p>Powered by <a href="https://fonts.google.com" target="_blank">Google Fonts</a> and <a href="https://camwiegert.github.io/baffle/" target="_blank">Baffle</a></p>
+                   Sarkar</a> and <a
+                   href="https://github.com/Bodzey" target="_blank" rel="noopener">Bodzey</a></p>
+			
 			<p>Special Thanks To <a href="https://instagram.com/rohini_das_" target="_blank">Rohi<span class="heart">&hearts;</span></a></p>
         </div>
     </div>
     <div class="copyrightSection">
         <div class="col-md-12 text-center">
-            <p>&copy; 2020, Rohie OS. All rights reserved.</p>
+            <p>&copy; 2021, RohieOS. All rights reserved.</p>
         </div>
     </div>
+    <div class="scrollup">
+        <!-- Иконка fa-chevron-up (Font Awesome) -->
+        <i class="fa fa-chevron-up"></i>
+      </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -244,6 +230,35 @@
     <script src="js/typed.min.js"></script>
     <script src="js/security.js"></script>
     <script src="js/script.js"></script>
-	<script src="js/anime.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <!-- easing plugin ( optional ) -->
+    <script src="js/easing.js" type="text/javascript"></script>
+    <!-- UItoTop plugin -->
+    <script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+    <!-- Starting the plugin -->
+    <script type="text/javascript">
+   
+    $(function() {
+  // при нажатии на кнопку scrollup
+  $('.scrollup').click(function() {
+    // переместиться в верхнюю часть страницы
+    $("html, body").animate({
+      scrollTop:0
+    },1000);
+  })
+})
+// при прокрутке окна (window)
+$(window).scroll(function() {
+  // если пользователь прокрутил страницу более чем на 200px
+  if ($(this).scrollTop()>200) {
+    // то сделать кнопку scrollup видимой
+    $('.scrollup').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.scrollup').fadeOut();
+  }
+});
+</script>
 </body>
 </html>
