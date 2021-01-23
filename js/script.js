@@ -1,8 +1,22 @@
+
+  $(window).on('load', function () {
+    $('body').addClass('loaded_hiding');
+    window.setTimeout(function () {
+      $('body').addClass('loaded');
+      $('body').removeClass('loaded_hiding');
+    }, 500);
+        
+    });
+   
+   
+   
 $(document).ready(function () {
+   
 
     var skillsTopOffset = $(".featuresSection").offset().top;
     var statsTopOffset = $(".statsSection").offset().top;
     var countUpFinished = false;
+
 
     $(window).scroll(function () {
 

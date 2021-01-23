@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500&display=swap');
 
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,6 +16,41 @@ body {
   letter-spacing: 1px;
   overflow-x:hidden;
 }
+
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  transition: 0.5s;
+  opacity: 50%;
+}        
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+  opacity: 50%;
+  transition: 0.5s linear;
+}
+::-webkit-scrollbar-thumb {
+  transition: 0.5s linear;
+  background: #AF39E6; 
+  color: #AF39E6;
+  border: 2px solid #000;
+  border-radius: 10px;
+  
+}
+::-webkit-scrollbar-thumb:hover {
+  
+  background: #44155a; 
+  color: #44155a ;
+  
+  
+}
+
 
 #about {
   width: 100%;
@@ -30,15 +67,15 @@ body {
   max-width: 25%;
   max-height: auto;
   border-radius: 25%;
-  display: block;
+display: block;
   margin-left: auto;
   margin-right: auto;
-  opacity: 100%;
-  
+  opacity: 100;
+	transition: .9s opacity ease-in-out;
 }
 
 .about_text {
-  background-color: #AF39E6;
+  background: linear-gradient(#AF39E6, #b271cf) ;
   color: #fff;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -63,7 +100,7 @@ body {
 
 
 #download {
-  background-color: #8946E8;
+  background: linear-gradient(#8946E8,#5619ac);
   text-align: center;
   color: #ffffff;
   padding: 5%;
@@ -93,6 +130,9 @@ body {
   padding-bottom: 5%;
   transform: scale(1.0);
   transition: 0.5s;
+  text-align: center;
+  align-content: center;
+  align-items: center;
 }
 #phone.jasmine:hover{
   transform: scale(1.1);
@@ -141,7 +181,7 @@ body {
 }
 
 @media screen and (max-width: 1336px) {
-  .TitleMessage .heading .main {
+  .TitleMessage .heading .main #phones {
     font-size: 70px;
     margin-top: -12px;
     font-weight: 300;
@@ -154,7 +194,7 @@ body {
 }
 
 @media screen and (max-width: 731px) {
-  .TitleMessage .heading .main {
+  .TitleMessage .heading .main #phones{
     margin-top: -10px;
     font-size: 30px;
     font-weight: 300;
@@ -162,14 +202,14 @@ body {
 }
 
 @media screen and (max-width: 628px) {
-  .TitleMessage .heading .main {
+  .TitleMessage .heading .main #phones {
     font-size: 30px;
     font-weight: 300;
   }
 }
 
 @media screen and (max-width: 530px) {
-  .TitleMessage .heading .main {
+  .TitleMessage .heading .main #phones {
     position: relative;
     top: 45px;
     font-size: 25px;
@@ -189,7 +229,7 @@ body {
 
 
 @media screen and (max-width: 1024px) {
-  .squareContent h2 {
+  .squareContent h2  #phones{
     font-size: 41px;
     margin-bottom: 10px;
     font-weight: 400;
@@ -224,7 +264,8 @@ body {
 }
 
 .contactSection {
-  background-color: #52057b;
+  
+  background: linear-gradient(#52057b,#11001a);
   text-align: center;
   color: #ffffff;
   padding: 5%;
@@ -568,22 +609,45 @@ body {
   top: 0;
 }
 
-.loader {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#283c86, #45a247);
-  background-color: #ffffff00;
+.preloader {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  background: #1a1a1a;
+  z-index: 1001;
 }
 
-.loader .inner {
-  width: 100%;
-  height: 100%;
-  background: url(../images/loader.gif) center center no-repeat;
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
 }
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.5s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 .squareItem {
   margin-top: 60px;
   position: relative;
@@ -695,11 +759,21 @@ body {
   font-size: 22px;
 }
 
+#catanim {
+  margin-left: auto;
+  margin-right: auto;
+display: block;
+}
+
 .creditSection {
   color: white;
- padding: 30px;
+  padding: 30px;
   background-color: #000000;
   border-top: 2px double rgb(82, 82, 82);
+  align-content: center;
+  width: auto;
+  height: auto;
+  display: block;
 }
 
 @keyframes bounce {
