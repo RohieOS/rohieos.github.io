@@ -1,257 +1,134 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Rohie OS</title>
-    <link rel="shortcut icon" type="image/png" href="images/icons/fevicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content=#000000>
-    <meta name="description" content="">
-    <meta name="keywords" content="android">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171600426-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
 
-  gtag('config', 'UA-171600426-1');
-</script>
-<style>
-    ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
-    }        
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 10px rgb(0, 0, 0); 
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #4c99c9; 
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #3079a7; 
-    }
-    </style>
+
+    <title>Rohie OS</title>
 </head>
 
 <body>
-    <div class="loader">
-        <div class="inner"></div>
-    </div>
 
-    <div id="slides">
-        <div class="overlay"></div>
-        <div class="slides-container">
-            <img src="images/slide1.jpg" alt="">
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <img class="header__logo" src="images/logo.png" alt="" width="150">
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#services">Features</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Screenshots</a>
+                <a class="nav__link" href="#" data-scroll="#works">Devices</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Contacts</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
         </div>
-        <div class="TitleMessage">
-            <div class="heading">
-                <p class="main" ></p>
-                <p class="sub typed"></p>
+    </div>
+</header>
+
+<body>
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__title">
+                    <img class="intro__title" src="images/logo-inner.png" alt="" width="400px"></div>
+
+                <a class="btn" href="#">Learn more</a>
             </div>
         </div>
-
-        <nav class="slides-navigation">
-            <a href="#" class="next"></a>
-            <a href="#" class="prev"></a>
-        </nav>
     </div>
 
-    <nav id="navigation" class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"></a>
-       <a class="navbar-brand js-scroll-trigger" href="#about">Rohie OS 😼</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#slides">Gallery <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#download">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#stats">Stats</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+   <!-- About -->
+    <section class="section" id="about">
+           <div class="about__bg">
 
-    <section id="about" class="about_profile">
-        <div class="container">
-            <img class="aboutImage" src="images/profile.png" alt="">
-        </div>
-        <div class="heading">
-            <h1>Rohie OS</h1>
-        </div>
-        <div class="sub_heading">
-            <h5>Powered By Android.</h5>
-        </div>
-        </div>
-    </section>
-    <section class="about_text">
-        <div class="container justify-content-center">
-            <h4 style="text-align: center;">Hey There,</h4>
-            <p class="about_para">Starting With Android 11 R, We Gonna Start Working On Rohie OS With Fresh New Look  and Upto Date Features with Minimalistic sources.
-				<p class="about_para">Cat Lovers Will Love This Rom as Everything In it Will Be Based on Kittens 😼. t.me/rohieos</p>
-			    <p class="about_para">This is an replacement to SlimAOSP which got abandoned before a stable release. So, after getting so much love for slimaosp i thought of reviving the rom again with fresh new look and features. t.me/SlimAOSP</p>
-				<center><p>Thanks.</p>
-				<p>Stay Safe.</p></center>
-        </div>
+                <div class="container">
+
+                    <div class="section__header">
+                    <h2 class="section__title">About RohieOS</h2>
+                       <div class="section__content">
+
+
+
+               <!--<h3 class="section__suptitle">Hey there!</h3>-->
+
+                        <div class="section__text">
+                           <p>Welcome, To RohieOS With Fresh Aosp Look, minimal Features and upto date sources.
+
+                            <p>Cat Lovers Will Love This Rom 😼.</p>
+
+                            <p>This is an replacement to SlimAOSP which got abandoned before a stable release. So, after getting so much love for slimaosp i thought of reviving the rom again with fresh new name, features and based on CAF source's. </p>
+
+
+                            <p>Stay Safe.</p>
+                       </div>
+
+                    <div class="lottie__anim">
+
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_2nNRZx.json"  mode="bounce" background="transparent"  speed="1"  style="width: 250px; height: 250px; float: left;"  loop  autoplay></lottie-player>
+
+                    </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
     </section>
 
-    <div id="features" class="featuresSection">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <hr class="line" width="40%">
-                    <h2>Features</h2>
-                    <p>Currently this rom has been broughtup with Aosp base and will have more caf stuff included which will promise raw performance without impacting the battery life</p>
-                    <p>This rom will have features from all the roms and provide one best user experience</p>
-                    <li>wip</li>
-                    <li>wip</li>
-                    <li>wip</li>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="download" class="basic-x container-fluid">
+ <section class="features" id="features">
+
         <div class="container">
-            <div class="container">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <h3 class="test-center">Downloads</h3> <br>
-                            <div style="overflow-y: auto; overflow-x: auto;">
-                                <table style="width:100%">
-                                    <tr class="col-lg-2">
-                                        <td style="text-align: center;"><a href="https://www.motorola.in/smartphones-moto-g7-power/p" class="btnsl2" target="_blank" style="font-size: inherit; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Moto G7 Power</a></td>
-                                        <td style="text-align: center;"><a href="https://sourceforge.net/projects/legionrom/files/ocean/" class="btnsl2d" target="_blank" style="font-size: inherit; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Download</a></td>
-                                    </tr>
-                                </table>
-                            </div>
+
+            <div class="features__header">
+                <h2 class="section__title">Features</h2>
+               <div class="features__content">
+
+
+
+               <!--<h3 class="section__suptitle">Hey there!</h3>-->
+
+                    <div class="features__text">
+
+                        <p>Currently this ROM has been broughtup with Aosp base and will have more caf stuff included which will promise raw performance without impacting the battery life</p>
+                    <p>This ROM will have features from all the ROMs and provide one best user experience</p> </div>
+                    <div class="features__list">
+
+                    <li>Pixel UI</li>
+                    <li>Pixel features</li>
+                    <li>Network Speed Indicator</li>
+                    <li>Face Unlock</li>
+                    <li>Better performance and battery</li>
+                    <li>Caffeine QS tile</li>
+                    <li>OP screen recorder</li>
+                    <li>Heads Up QS tile</li>
+                    <li>and more</li>
+
+                   </div>
+
+<!--
+                    <div class="lottie__anim">
+
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_2nNRZx.json"  mode="bounce" background="transparent"  speed="1"  style="width: 250px; height: 250px; float: left;"  loop  autoplay></lottie-player>
+
+                    </div>
+-->
+
+                   </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="stats" class="statsSection">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <hr class="line" width="40%">
-                    <h2>Rom Stats</h2>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-download"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">0</span><span>+</span></h2>
-                                <h3>Downloads</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-mobile"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">0</span><span>+</span></h2>
-                                <h3>Devices</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-male"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">5</span><span>+</span></h2>
-                                <h3>Devs</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">0</span><span>+</span></h2>
-                                <h3>User</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="contactSection">
-        <div class="col-md-12 text-center">
-            <hr class="line" width="35%">
-            <h2>Contact US!</h2>
-            <a href="mailTo:" class="mailButton">Email</a>
-        </div>
-        <div class="social">
-            <p>Follow Rohie Os!</p>
-            <a href="https://www.github.com/rohieos" class="github" target="_blank" rel="noopener"><i
-                    class="fab fa-github fa-2x"></i></a>
-            <a href="https://t.me/rohieos" class="telegram" target="_blank" rel="noopener"><i
-                    class="fab fa-telegram fa-2x"></i></a>
-        </div>
-    </div>
-    <div class="creditSection">
-        <div class="col-md-12 text-center">
-            <p>Designed with <span class="heart">&hearts;</span> by <a
-                    href="https://github.com/manish4586" target="_blank" rel="noopener">Manish
-                   Sarkar</a></p>
-			<p>Powered by <a href="https://fonts.google.com" target="_blank">Google Fonts</a> and <a href="https://camwiegert.github.io/baffle/" target="_blank">Baffle</a></p>
-			<p>Special Thanks To <a href="https://instagram.com/rohini_das_" target="_blank">Rohi<span class="heart">&hearts;</span></a></p>
-        </div>
-    </div>
-    <div class="copyrightSection">
-        <div class="col-md-12 text-center">
-            <p>&copy; 2020, Rohie OS. All rights reserved.</p>
-        </div>
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery.superslides.min.js"></script>
-    <script src="js/countUp.js"></script>
-    <script src="js/countUp-jquery.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/security.js"></script>
-    <script src="js/script.js"></script>
-	<script src="js/anime.min.js"></script>
+    </section>
+
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 </body>
-</html>
