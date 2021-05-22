@@ -123,7 +123,7 @@ display: block;
   opacity: 90%;
   float: left;
   display: block;
-  width: 320px;
+  width: 300px;
   border: 0px solid rgb(0, 0, 0);
   border-radius: 15%;
   margin: 30px;
@@ -147,7 +147,7 @@ display: block;
   opacity: 90%;
   float: left;
   display: block;
-  width: 320px;
+  width: 300px;
   border: 0px solid rgb(0, 0, 0);
   border-radius: 15%;
   margin: 30px;
@@ -163,6 +163,29 @@ display: block;
   color:rgb(255, 255, 255);
   opacity: 100%;
 }
+
+#phone.violet {
+  background-color: #111111;
+  opacity: 90%;
+  float: left;
+  display: block;
+  width: 300px;
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 15%;
+  margin: 30px;
+  padding-bottom: 5%;
+  transform: scale(1.0);
+  transition: 0.5s;
+}
+
+#phone.violet:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 1px 1px 20px #000000;
+  color:rgb(255, 255, 255);
+  opacity: 100%;
+}
+
 .about_para {
   margin-bottom: 0px;
   padding-bottom: 10px;
