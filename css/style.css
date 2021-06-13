@@ -75,7 +75,7 @@ display: block;
 }
 
 .about_text {
-  background: linear-gradient(#AF39E6, #b271cf) ;
+  background: linear-gradient(#8946E8,#5619ac);
   color: #fff;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -90,23 +90,24 @@ display: block;
   text-align: center;
   color: #ffffff;
 }
-#powered {
-
-  float:right;
-  display: block;
-  opacity: 15%;
-  
-}
-
 
 #download {
-  background: linear-gradient(#8946E8,#5619ac);
+  background: linear-gradient(#8946E8,#5619ac); 
+  background-size: cover;
   text-align: center;
-  color: #ffffff;
+  color: fff;
   padding: 5%;
   margin: 1px;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+}
+
+.about_para {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  text-align: left;
 }
 
 #phones {
@@ -114,12 +115,12 @@ display: block;
   text-align: center;
   align-content: center;
   align-items: center;
-  color:rgb(155, 155, 155)
+  color:rgb(255, 255, 255)
 
 }
 
 #phone.jasmine {
-  background-color: #111111;
+  background-color: #160831;
   opacity: 90%;
   float: left;
   display: block;
@@ -143,7 +144,7 @@ display: block;
 }
 
 #phone.wayne {
-  background-color: #111111;
+  background-color: #160831;
   opacity: 90%;
   float: left;
   display: block;
@@ -165,7 +166,7 @@ display: block;
 }
 
 #phone.violet {
-  background-color: #111111;
+  background-color: #160831;
   opacity: 90%;
   float: left;
   display: block;
@@ -187,7 +188,7 @@ display: block;
 }
 
 #phone.lavender {
-  background-color: #111111;
+  background-color: #160831;
   opacity: 90%;
   float: left;
   display: block;
@@ -208,15 +209,8 @@ display: block;
   opacity: 100%;
 }
 
-.about_para {
-  margin-bottom: 0px;
-  padding-bottom: 10px;
-  font-size: 16px;
-  text-align: center;
-}
-
 #phone.ginkgo {
-  background-color: #111111;
+  background-color: #160831;
   opacity: 90%;
   float: left;
   display: block;
@@ -238,10 +232,11 @@ display: block;
 }
 
 #features {
-  text-align: center;
+  text-align: left;
   background-color: #1a1a1a;
   padding: 5%;
-  color: #fff;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
   margin-bottom: -1px;
   background-image: url(../images/bg-pattern.png);
   background-size: cover;
