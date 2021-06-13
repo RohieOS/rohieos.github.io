@@ -679,7 +679,7 @@ display: block;
   bottom: 0;
   overflow: hidden;
   /* фоновый цвет */
-  background: #1a1a1a;
+  background: linear-gradient(#4f1e94,#330b6b);
   z-index: 1001;
 }
 

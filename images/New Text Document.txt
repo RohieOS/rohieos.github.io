@@ -1,7 +1,0 @@
-  background-image: url(../images/bg-pattern.png);
-  background-size: cover;
-
-background: linear-gradient(#8946E8,#5619ac);
-
-
-background-image: url(../images/bg-pattern.png);
