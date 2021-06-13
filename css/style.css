@@ -186,11 +186,55 @@ display: block;
   opacity: 100%;
 }
 
+#phone.lavender {
+  background-color: #111111;
+  opacity: 90%;
+  float: left;
+  display: block;
+  width: 300px;
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 15%;
+  margin: 30px;
+  padding-bottom: 5%;
+  transform: scale(1.0);
+  transition: 0.5s;
+}
+
+#phone.lavender:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 1px 1px 20px #000000;
+  color:rgb(255, 255, 255);
+  opacity: 100%;
+}
+
 .about_para {
   margin-bottom: 0px;
   padding-bottom: 10px;
   font-size: 16px;
   text-align: center;
+}
+
+#phone.ginkgo {
+  background-color: #111111;
+  opacity: 90%;
+  float: left;
+  display: block;
+  width: 300px;
+  border: 0px solid rgb(0, 0, 0);
+  border-radius: 15%;
+  margin: 30px;
+  padding-bottom: 5%;
+  transform: scale(1.0);
+  transition: 0.5s;
+}
+
+#phone.ginkgo:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 1px 1px 20px #000000;
+  color:rgb(255, 255, 255);
+  opacity: 100%;
 }
 
 #features {
