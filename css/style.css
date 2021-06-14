@@ -86,7 +86,7 @@ display: block;
 }
 
 .heading {
-  padding-top: 30px;
+  padding-top: 35px;
   text-align: center;
   color: #ffffff;
 }
@@ -327,10 +327,10 @@ display: block;
 
 .contactSection {
   
-  background: linear-gradient(#52057b,#11001a);
-  text-align: center;
+  background: linear-gradient(#8946E8,#5619ac);
+  text-align: left;
   color: #ffffff;
-  padding: 5%;
+  padding: 2%;
   margin: 1px;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -338,6 +338,7 @@ display: block;
 
 .mailButton {
   color: #fff;
+  text-align: left;
   padding: 15px 20px;
   display: inline-block;
   margin-top: 20px;
@@ -348,6 +349,7 @@ display: block;
 .rohi {
   color: #fff;
   padding: 15px 20px;
+  font-size: 40em;
   display: inline-block;
   margin-top: 20px;
   border: 1px solid #fff;
@@ -510,16 +512,6 @@ display: block;
   padding: 0;
 }
 
-.copyrightSection {
-  color: white;
-  padding: 30px 5px;
-  background-color: black;
-}
-
-.copyrightSection p {
-  margin: 0;
-}
-
 .social {
   margin-top: 40px;
   text-align: center;
@@ -613,11 +605,11 @@ display: block;
 
 #navigation {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  padding: 7px;
   z-index: 3;
   width: 100%;
   margin-bottom: -4px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(23px);
   text-align: right;
 }
 
@@ -824,17 +816,14 @@ display: block;
 #catanim {
   margin-left: auto;
   margin-right: auto;
-display: block;
+  display: block;
 }
 
 .creditSection {
   color: white;
-  padding: 30px;
+  padding: 20px;
   background-color: #000000;
   border-top: 2px double rgb(82, 82, 82);
-  align-content: center;
-  width: auto;
-  height: auto;
   display: block;
 }
 
