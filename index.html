@@ -1,280 +1,301 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>RohieOS</title>
-    <link rel="shortcut icon" type="image/png" href="images/icons/fevicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content=#000000>
-    <meta name="description" content="">
-    <meta name="keywords" content="android">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171600426-1"></script>
-<script>
- 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<meta charset="UTF-8">
+	<title>RohieOS</title>
+	<link rel="shortcut icon" type="image/png" href="img/fevicon.png">
 
-  gtag('config', 'UA-171600426-1');
-</script>
-<noscript>
-	<style>.body_hide{opacity: 1 !important;}</style>
-</noscript>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.css">
+
+	<!-- Box Icons-->
+	<link rel="stylesheet" href="css/boxicons/css/boxicons.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    
-    <div class="preloader">
-        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <path fill="currentColor"
-            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-          </path>
-        </svg>
-      </div>
 
-    <nav id="navigation" class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"></a>
-       <a class="navbar-brand js-scroll-trigger" href="#about">RohieOS 😻</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-       
-        <div class="collapse justify-content-xl-center navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#download">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#stats">Stats</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </nav>
+<div id="page-wrap">
 
-    <section id="about" class="about_profile" >
-        <div id="img" class="container">
-            <img class="aboutImage" src="images/profile1.png" alt="">
-            
-        </div>
-        <div class="heading">
-            <h1>RohieOS</h1>
-        </div>  
-        </div>
-        
-    </section>
-    <section class="about_text">
-        <div class="container justify-content-center"></div>
-            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_z21zgqxn.json"  mode="bounce" background="transparent"  speed="1"  style="width: 250px; height: 250px; float: right;"  loop  autoplay></lottie-player>
-            <h2 style="text-align: left;">Hey There,</h2>
-            <br>
-            <p class="about_para">Starting With Android 11 R, We Gonna Start Working On RohieOS With Fresh New Look  and Upto Date Features with Minimalistic sources.
-				<p class="about_para">Cat Lovers Will Love This Rom as Everything In it Will Be Based on Kittens 😼.</p>
-			    <p class="about_para">This is an replacement to SlimAOSP which got abandoned before a stable release. So, after getting so much love for slimaosp i thought of reviving the rom again with fresh new look and features. t.me/SlimAOSP</p>
-				<p class="about_para">Thanks.<br>Stay Safe </p>
+
+	<!-- ==========================================================================================================
+													   HERO
+		 ========================================================================================================== -->
+
+	<div id="fh5co-hero-wrapper">
+		<nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
+			<a class="navbar-brand" href="">RohieOS</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-items-center ml-auto mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="$('#screenshot').goTo();return false;">Screenshot</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="$('#team').goTo();return false;">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="$('#contact').goTo();return false;">Contact</a>
+					</li>
+				</ul>
+				<div class="social-icons-header">
+					<a href="https://github.com/RohieOS"><i class="fab fa-github"></i></a>
+					<a href="https://t.me/rohieos"><i class="fab fa-telegram"></i></a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container fh5co-hero-inner">
+			<h1 class="animated fadeIn wow" data-wow-delay="0.4s">The Pure AOSP Experience Which Every Users Want. Based On CAF, With Meow Icons.</h1>
+			<br>
+			<br>
+			<a href="./download.html" button class="btn btn-md download-btn-first wow fadeInLeft animated" data-wow-delay="0.85s" onclick="$('').goTo();return false;">Download</button></a>
+			<img class="fh5co-hero-smartphone animated fadeInRight wow" data-wow-delay="1s" src="img/smartphone/phone-image.png" alt="Smartphone">
+		</div>
+
+
+	</div> <!-- first section wrapper -->
+
+
+	<!-- ==========================================================================================================
+													 Screenshots
+		 ========================================================================================================== -->
+	<br>
+	<br>
+	<div class="fh5co-slider-outer wow fadeIn" data-wow-delay="3.35s">
+		<h1><span class="span-features">Screenshots</span></h1>
+		<small>Meow is here 🐈</small>
+		<br>
+		<section id="screenshot" class="screenshot"></section>
+		<div class="container fh5co-slider-inner">
+
+			<div class="owl-carousel owl-theme">
+
+				<div class="item"><img src="img/smartphone/smartphone-1.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-2.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-3.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-4.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-5.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-6.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-7.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-8.png" alt=""></div>
+				<div class="item"><img src="img/smartphone/smartphone-9.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<!-- ==========================================================================================================
+													  FEATURES
+		 ========================================================================================================== -->
+		 <div class="fh5co-advantages-outer">
+			<div class="container">
+			<h1 class="second-title"><span class="span-features">Features</span></h1>
+			</div>
+			</div>
+	<div id="fh5co-features" class="fh5co-features-outer">
+		<div class="container">
+
+			<div class="row fh5co-features-grid-columns">
+
+				<div class="col-sm-6 in-order-1 wow animated fadeInLeft" data-wow-delay="0.22s">
+					<div class="col-sm-image-container">
+						<img class="img-float-left" src="img/smartphone/smartphone-1.png" alt="smartphone-1">
+					</div>
+				</div>
+
+				<div class="col-sm-6 in-order-2 sm-6-content wow animated fadeInRight" data-wow-delay="0.22s">
+					<h1>User Interface</h1>
+					<p>Currently this ROM has been broughtup with Aosp base and will have more caf stuff included which will promise raw performance without impacting the battery life. </p>
+				</div>
+
+				<div class="col-sm-6 in-order-3 sm-6-content wow animated fadeInLeft" data-wow-delay="0.22s">
+					<h1>Lockscreen Clocks</h1>
+					<p>Even if its a stock android rom , still we have some customisation's (cuz users want those)</p>
+				</div>
+
+				<div class="col-sm-6 in-order-4 wow animated fadeInRight" data-wow-delay="0.22s">
+					<img class="img-float-right" src="img/smartphone/smartphone-4.png" alt="smartphone-2">
+				</div>
+
+				<div class="col-sm-6 in-order-5 wow animated fadeInLeft" data-wow-delay="0.22s">
+					<div class="col-sm-image-container">
+						<img class="img-float-left" src="img/smartphone/smartphone-5.png" alt="smartphone-3">
+					</div>
+				</div>
+				<div class="col-sm-6 in-order-6 sm-6-content wow animated fadeInRight" data-wow-delay="0.22s">
+					<h1>APP-Locker</h1>
+					<p>AppLock is useful in several cases. It protects apps from unauthorised access by allowing you to secure them using a PIN number ,password or with Fingerprint.</p>
+
+				</div>
+				<div class="col-sm-6 in-order-3 sm-6-content wow animated fadeInLeft" data-wow-delay="0.22s">
+					<h1>UP TO DATE</h1>
+					<p>Rohie is always up-to-date with latest AOSP/CAF Tags.</p>
+				</div>
+
+				<div class="col-sm-6 in-order-4 wow animated fadeInRight" data-wow-delay="0.22s">
+					<img class="img-float-right" src="img/smartphone/smartphone-3.png" alt="smartphone-2">
+				</div>
+				</div>
+				<br>
+				<br>
+
+			</div> <!-- row -->
+
+			</div>
+		</div>
+	</div>
+
+	    <!-- ======= Team Section ======= -->
+		<section id="team" class="team">
+			<div class="container" data-aos="fade-up">
+	  
+			  <div class="section-title">
+				<h1 class="second-title"><span class="span-features">TEAM</span></h1>
+				<br>
+				<br>
+			  </div>
+	  
+			  <div class="row">
+	  
+				<div class="col-xl-3 col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+				  <div class="member">
+					<img src="img/team/manish.jpg" class="img-fluid" alt="">
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Manish4586</h4>
+						<span>Owner / Lead Developer</span>
+					  </div>
+					  <div class="social">
+						<a href=""><i class="bi bi-twitter"></i></a>
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a>
+						<a href=""><i class="bi bi-github"></i></a>
+					  </div>
+					</div>
+				  </div>
+				</div>
 				
-        </div>
-    </section>
+				<div class="col-xl-3 col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+					<div class="member">
+					  <img src="img/team/karthik.jpg" class="img-fluid" alt="">
+					  <div class="member-info">
+						<div class="member-info-content">
+						  <h4>K A R T  H I K</h4>
+						  <span>Maintainer/Website-Developer</span>
+						</div>
+						<div class="social">
+						  <a href="https://twitter.com/Karthiksp206"><i class="bi bi-twitter"></i></a>
+						  <a href="https://www.facebook.com/karthik.sp.5817"><i class="bi bi-facebook"></i></a>
+						  <a href="https://instagram.com/karthiksmokiez"><i class="bi bi-instagram"></i></a>
+						  <a href="https://github.com/karthik558"><i class="bi bi-github"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
 
-    <div id="features" class="featuresSection">
-        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_ltuxwdw4.json"  mode="bounce" background="transparent" speed="1"  style="width: 250px; height: 250px; float: right;"  loop  autoplay></lottie-player>
-                    <h1 style="text-align: left;">Features</h1>
-                    <br>
-                    <p>Currently this ROM has been broughtup with Aosp base and will have more caf stuff included which will promise raw performance without impacting the battery life</p>
-                    <p>This ROM will have features from all the ROMs and provide one best user experience</p>
-                    <li>Pixel UI</li>
-                    <li>Pixel features</li>
-                    <li>Network Speed Indicator</li>
-                    <li>Face Unlock</li>
-                    <li>Better performance and battery</li>
-                    <li>Caffeine QS tile</li>
-                    <li>OP screen recorder</li>
-                    <li>Lockscreen clocks</li>
-                    <li>Heads Up QS tile</li>
-                    <li>and more</li>
-                </div>
+				<div class="col-xl-3 col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="200">
+				  <div class="member">
+					<img src="img/team/imannual.jpeg" class="img-fluid" alt="">
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Immanuel Raj</h4>
+						<span>Source Maintainer</span>
+					  </div>
+					  <div class="social">
+						<a href=""><i class="bi bi-twitter"></i></a>
+						<a href=""><i class="bi bi-discord"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a>
+						<a href=""><i class="bi bi-youtube"></i></a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+			  </div>
+	  
+			</div>
+		  </section><!-- End Team Section -->
 
+	<!-- ==========================================================================================================
+                                               Contact Section
+    ========================================================================================================== -->
 
-    <div id="download" class="basic-x container-fluid">
-        <h1 style="text-align: left;">Download</h1>
-        <br>
-        <div id="phones">
-            <div id="phone" class="jasmine" onclick="location.href='https://sourceforge.net/projects/rohieos/files/r/jasmine_sprout/';" style="cursor: pointer;" target="_blank">
-                <br><br><img src="images/devices/jasmine.png" width="150px"><br><br>
-                <h3 class= "phone_name">Xiaomi MI A2 </h3><br>
-                jasmine_sprout
-            </div>
-            <div id="phone" class="wayne" onclick="location.href='https://sourceforge.net/projects/rohieos/files/r/wayne/';" style="cursor: pointer;" target="_blank">
-                <br><br><img src="images/devices/wayne.png" width="150px" ><br><br>
-                <h3 class= "phone_name">Xiaomi MI 6X </h3><br>
-                wayne
-            </div>
-            <div id="phone" class="violet" onclick="location.href='https://sourceforge.net/projects/rohieos/files/r/violet/';" style="cursor: pointer;" target="_blank">
-                <br><br><img src="images/devices/violet.png" width="150px"><br><br>
-                <h3 class= "phone_name">Redmi Note 7 Pro </h3><br>
-                violet
-            </div>
-			<div id="phone" class="lavender" onclick="location.href='https://sourceforge.net/projects/rohieos/files/r/lavender';" style="cursor: pointer;" target="_blank">
-                <br><br><img src="images/devices/lavender.jpg" width="180px"><br><br>
-                <h3 class= "phone_name">Redmi Note 7 </h3><br>
-                lavender
-            </div>
-			<div id="phone" class="ginkgo" onclick="location.href='https://sourceforge.net/projects/rohieos/files/r/ginkgo';" style="cursor: pointer;" target="_blank">
-                <br><br><img src="images/devices/ginkgo.png" width="180px"><br><br>
-                <h3 class= "phone_name">Redmi Note 8 </h3><br>
-                ginkgo
-            </div>
-        </div>
-    </div>
-    
-    <div id="stats" class="statsSection">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    
-                    <h3>ROM Stats</h2>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-download"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">750</span><span>+</span></h2>
-                                <h3>Downloads</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-mobile"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">6</span><span>+</span></h2>
-                                <h3>Devices</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-male"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">5</span><span>+</span></h2>
-                                <h3>Devs</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2> <span class="counter">600</span><span>+</span></h2>
-                                <h3>Users</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="contactSection">
-        <div class="col-md-12 text-center">
-            
-            <h2>Contact us</h2>
-            <a href="mailTo:" class="mailButton">Email</a>
-        </div>
-        <div class="social">
-            <p>Follow RohieOS</p>
-            <a href="https://www.github.com/rohieos" class="github" target="_blank" rel="noopener"><i
-                    class="fab fa-github fa-2x"></i></a>
-            <a href="https://t.me/rohieos" class="telegram" target="_blank" rel="noopener"><i
-                    class="fab fa-telegram fa-2x"></i></a>
-        </div>
-    </div>
-    <lottie-player src="https://assets3.lottiefiles.com/temp/lf20_l0ORt3.json"  mode="bounce" background="transparent" speed="1"  style="width: 180px; height: 180px; float: right;"  loop  autoplay></lottie-player>
-    <div class="creditSection">
-        <div class="col-md-12 text-left">
-            <p>Designed with <span class="heart">&hearts;</span> by 
-                <a href="https://github.com/manish4586" target="_blank" rel="noopener">Manish
-                   Sarkar</a> and <a
-                   href="https://github.com/Bodzey" target="_blank" rel="noopener">Bodzey</a></p>
-			
-			<p>Special Thanks To <a href="https://instagram.com/rohini_das_" target="_blank">Rohi <span class="heart">&hearts;</span></a></p>
-            <p>© 2021, RohieOS. All rights reserved.</p>
-    <div class="scrollup">
-        <!-- Иконка fa-chevron-up (Font Awesome) -->
-        <i class="fa fa-chevron-up"></i>
-      </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery.superslides.min.js"></script>
-    <script src="js/countUp.js"></script>
-    <script src="js/countUp-jquery.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/security.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/anime.min.js"></script>
-    <!-- easing plugin ( optional ) -->
-    <script src="js/easing.js" type="text/javascript"></script>
-    <!-- UItoTop plugin -->
-    <script src="js/jquery.ui.totop.js" type="text/javascript"></script>
-    <!-- Starting the plugin -->
-    <script type="text/javascript">
-   
-    $(function() {
-  // при нажатии на кнопку scrollup
-  $('.scrollup').click(function() {
-    // переместиться в верхнюю часть страницы
-    $("html, body").animate({
-      scrollTop:0
-    },1000);
-  })
-})
-// при прокрутке окна (window)
-$(window).scroll(function() {
-  // если пользователь прокрутил страницу более чем на 200px
-  if ($(this).scrollTop()>200) {
-    // то сделать кнопку scrollup видимой
-    $('.scrollup').fadeIn();
-  }
-  // иначе скрыть кнопку scrollup
-  else {
-    $('.scrollup').fadeOut();
-  }
-});
-</script>
+		  <div id="contact" class="contactSection">
+			<div class="col-md-12 text-center">
+				
+				<h2>CONTACT US</h2>
+				<a href="mailTo:" class="mailButton">Send Mail</a>
+				<br>
+			</div>
+		</div>
+
+	<!-- ==========================================================================================================
+                                               FOOTER
+    ========================================================================================================== -->
+
+	<footer class="footer-outer">
+		<div class="container footer-inner">
+
+			<div class="footer-three-grid wow fadeIn animated" data-wow-delay="0.66s">
+				<div class="column-1-3">
+					<h1>RohieOS</h1>
+					<p> <a href="https://www.instagram.com/accounts/login/?next=/rohini_das_/"> Special Thanks To Rohi ♥ </a></p>
+				</div>
+				<div class="column-2-3">
+					<nav class="footer-nav">
+						<ul>
+							<a href="#" onclick="$('#fh5co-hero-wrapper').goTo();return false;"><li>Home</li></a>
+							<a href="#" onclick="$('#fh5co-features').goTo();return false;"><li>Features</li></a>
+						</ul>
+					</nav>
+				</div>
+				<div class="column-3-3">
+					<div class="social-icons-footer">
+						<a href="https://github.com/RohieOS"><i class="fab fa-github"></i></a>
+						<a href="https://t.me/rohieos"><i class="fab fa-telegram"></i></a>
+					</div>
+				</div>
+			</div>
+			<span class="border-bottom-footer"></span>
+			<p class="copyright">&copy; 2021 RohieOS All rights reserved. Design by <a href="https://karthik558.github.io" target="_blank">K A R T H I K</a>.</p>
+
+		</div>
+	</footer>
+
+</div> <!-- main page wrapper -->
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/security.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
