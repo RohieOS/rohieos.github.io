@@ -163,7 +163,7 @@ html {
 }
 .fh5co-advantages-outer .span-features {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 44px;
 }
 .fh5co-advantages-outer .second-title {
   text-align: center;
@@ -210,7 +210,7 @@ html {
 .fh5co-slider-outer {
   width: 100%;
   height: auto;
-  padding: 70px;
+  padding: 170px;
 }
 .fh5co-slider-outer h1 {
   color: #648cff;
@@ -395,7 +395,6 @@ html {
 										FEATURES
    ========================================================================================================== */
 .curved-bg-div {
-  background: url("../img/curved-bgg.jpg") no-repeat;
   background-position: 0px -140px;
   background-size: cover;
   width: 100%;
@@ -411,7 +410,7 @@ html {
   margin-top: 80px;
 }
 .fh5co-features-outer .col-sm-6 img {
-  height: 550px;
+  height: 600px;
 }
 .fh5co-features-outer .sm-6-content {
   margin-top: 250px;
@@ -420,7 +419,7 @@ html {
 .fh5co-features-outer .sm-6-content h1 {
   color: #648cff;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -897,8 +896,8 @@ html {
   }
 
   #fh5co-hero-wrapper {
-    height: 95vh;
-  }
+    -    height: 95vh;
+    -  }
 
   .fh5co-hero-inner {
     margin-top: 30px;
@@ -916,8 +915,8 @@ html {
   }
   
   .fh5co-advantages-outer {
-    margin-top: 50px;
-    padding-bottom: 0;
+    margin-top: 0px;
+    padding-bottom: 140px;
   }
 
   .fh5co-advantages-outer .fh5co-advantages-grid-columns .col-sm-4 .grid-image {
@@ -1040,6 +1039,7 @@ html {
   }
   .fh5co-features-grid-columns .in-order-3 {
     order: 2;
+
   }
 
   .fh5co-reviews-outer {
