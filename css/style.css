@@ -248,148 +248,126 @@ html {
 }
 
 /* ==========================================================================================================
-									DOWNLOAD
+									DOWNLOAD PAGE
    ========================================================================================================== */
-   
-   #download {
-    background: linear-gradient(#8946E8,#5619ac); 
-    background-size: cover;
-    text-align: center;
-    color: fff;
-    padding: 5%;
-    margin: 1px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+
+   #fh5co-hero-wrapperr {
+    width: 100%;
+    border-radius: 0 0 50% 50% / 4%;
   }
-  
-  .about_para {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    padding-bottom: 10px;
-    font-size: 17px;
-    text-align: left;
-  }
-  
-  #phones {
+
+.containerr
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.containerr .box
+{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+.containerr .box:hover
+{
+    transform: translate(-20px);
+}
+
+.containerr .box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg, #5a01ff, #901aff);
+}
+.containerr .box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(105deg, #1b003a, #3a0046);
+    filter: blur(20px);
+}
+.containerr .box:nth-child(2)::before
+.containerr .box:nth-child(2)::after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.containerr .box:nth-child(3)::before
+.containerr.box:nth-child(3)::after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);   
+}
+.containerr .box span
+{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgb(9 10 15);
+    z-index: 2;
+}
+.containerr .box span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+.containerr .box .content
+{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+.containerr .box .content h2
+{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.containerr .box .content p
+{
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+.containerr .box .content a{
     display: inline-block;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    color:rgb(255, 255, 255)
-  
-  }
-  
-  #phone.jasmine {
-    background-color: #160831;
-    opacity: 90%;
-    float: left;
-    display: block;
-    width: 300px;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 15%;
-    margin: 30px;
-    padding-bottom: 5%;
-    transform: scale(1.0);
-    transition: 0.5s;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-  }
-  #phone.jasmine:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 1px 1px 20px #000000;
-    color:rgb(255, 255, 255);
-    opacity: 100%;
-  }
-  
-  #phone.wayne {
-    background-color: #160831;
-    opacity: 90%;
-    float: left;
-    display: block;
-    width: 300px;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 15%;
-    margin: 30px;
-    padding-bottom: 5%;
-    transform: scale(1.0);
-    transition: 0.5s;
-  }
-  
-  #phone.wayne:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 1px 1px 20px #000000;
-    color:rgb(255, 255, 255);
-    opacity: 100%;
-  }
-  
-  #phone.violet {
-    background-color: #160831;
-    opacity: 90%;
-    float: left;
-    display: block;
-    width: 300px;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 15%;
-    margin: 30px;
-    padding-bottom: 5%;
-    transform: scale(1.0);
-    transition: 0.5s;
-  }
-  
-  #phone.violet:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 1px 1px 20px #000000;
-    color:rgb(255, 255, 255);
-    opacity: 100%;
-  }
-  
-  #phone.lavender {
-    background-color: #160831;
-    opacity: 90%;
-    float: left;
-    display: block;
-    width: 300px;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 15%;
-    margin: 30px;
-    padding-bottom: 5%;
-    transform: scale(1.0);
-    transition: 0.5s;
-  }
-  
-  #phone.lavender:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 1px 1px 20px #000000;
-    color:rgb(255, 255, 255);
-    opacity: 100%;
-  }
-  
-  #phone.ginkgo {
-    background-color: #160831;
-    opacity: 90%;
-    float: left;
-    display: block;
-    width: 300px;
-    border: 0px solid rgb(0, 0, 0);
-    border-radius: 15%;
-    margin: 30px;
-    padding-bottom: 5%;
-    transform: scale(1.0);
-    transition: 0.5s;
-  }
-  
-  #phone.ginkgo:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    box-shadow: 1px 1px 20px #000000;
-    color:rgb(255, 255, 255);
-    opacity: 100%;
-  }
+    font-size: 1.1em;
+    color: black;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.containerr .box .content:hover a{
+color: #fff;
+background: black;
+}
 
 /* ==========================================================================================================
 										FEATURES
@@ -558,39 +536,6 @@ html {
   position: absolute;
   margin-left: 100px;
   font-weight: 600;
-}
-
-/* ==========================================================================================================
-										REVIEWS
-   ========================================================================================================== */
-.fh5co-reviews-outer {
-  width: 100%;
-  height: 400px;
-  padding: 70px;
-  margin-top: 100px;
-}
-.fh5co-reviews-outer .fh5co-reviews-inner {
-  margin-top: 100px;
-}
-.fh5co-reviews-outer > h1 {
-  color: #648cff;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.fh5co-reviews-outer > small {
-  text-align: center;
-  display: block;
-}
-.fh5co-reviews-outer .testimonial-desc {
-  clear: both;
-  padding-top: 30px;
-  font-weight: 500;
-}
-.fh5co-reviews-outer .testimonial-2 {
-  margin-left: 50px;
 }
 
 /* ==========================================================================================================
@@ -894,10 +839,6 @@ html {
   body {
     overflow-x: hidden;
   }
-
-  #fh5co-hero-wrapper {
-    -    height: 95vh;
-    -  }
 
   .fh5co-hero-inner {
     margin-top: 30px;
