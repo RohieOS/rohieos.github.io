@@ -35,7 +35,9 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	<!-- Preloader-->
+	<div class="loader_bg"></div>
+	<div class="loader"></div>
 
 <div id="page-wrap">
 
@@ -291,12 +293,19 @@
 	</footer>
 
 </div> <!-- main page wrapper -->
-	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/security.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script>
+		setTimeout(function(){
+			$('.loader_bg').fadeToggle();
+		}, 350);
+	</script>
+
 </body>
 </html>

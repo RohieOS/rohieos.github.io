@@ -36,6 +36,8 @@
 </head>
 <body>
 
+	<div class="loader_bg"></div>
+	<div class="loader"></div>
 
 <div id="page-wrap">
 
@@ -163,6 +165,13 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/security.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		setTimeout(function(){
+			$('.loader_bg').fadeToggle();
+		}, 350);
+	</script>
+
 	<script type="text/javascript" src="js/vanilla-tilt.js"></script>
 	<script>
 		VanillaTilt.init(document.querySelectorAll(".box"),{
@@ -172,5 +181,6 @@
 		   "max-glare": 1,
 	   });
 	</script>
+	
 </body>
 </html>
