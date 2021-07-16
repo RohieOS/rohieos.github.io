@@ -737,13 +737,15 @@ background: black;
 --------------------------------------------------------------*/
 .team {
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0 0;
 }
 
 .team .member {
+  justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
-  background: #343a40;
+  margin-top: 34px;
+  margin-left: 50px;
+  margin-bottom: 80px;
   border-radius: 3%;
   position: relative;
   overflow: hidden;
@@ -778,7 +780,7 @@ background: black;
   font-style: italic;
   display: block;
   font-size: 13px;
-  color: rgb(183, 0, 255);;
+  color: rgb(194, 130, 255);
 }
 
 .team .member .social {
@@ -823,6 +825,13 @@ background: black;
   transition: bottom ease-in-out 0.4s;
 }
 
+.img-fluid {
+  border-color: indianred;
+    max-width: 170px;
+    max-height: 220px;
+    border-radius: 3%;
+  }
+
 /* ==========================================================================================================
                                        CONTACT SECTION
   ========================================================================================================== */
@@ -839,6 +848,7 @@ background: black;
   color: rgb(111, 0, 255);
   text-align: left;
   padding: 15px 20px;
+  margin-bottom: 50px;
   display: inline-block;
   margin-top: 20px;
   border: 2px solid #434769;
