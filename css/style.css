@@ -310,16 +310,20 @@ html {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 40px 0;
     flex-wrap: wrap;
+    padding-top: 190px;
+    padding-bottom: 220px;
 }
 .containerr .box
 {
     position: relative;
-    width: 320px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     color: #fff;
+    
     background: #111;
     display: flex;
     justify-content: center;
