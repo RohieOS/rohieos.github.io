@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800");
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Comfortaa";
+  font-family: "Montserrat", "sans-serif";
 }
 
 html {
@@ -11,6 +11,7 @@ html {
 
 .download-btn-first {
   background: rgb(86, 0, 199);
+  border-radius: 13px;
 }
 
 .download-btn-first:hover {
@@ -297,132 +298,6 @@ html {
 }
 
 /* ==========================================================================================================
-									DOWNLOAD PAGE
-   ========================================================================================================== */
-
-   #fh5co-hero-wrapperr {
-    width: 100%;
-    border-radius: 0 0 50% 50% / 4%;
-  }
-
-.containerr
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 40px 0;
-    flex-wrap: wrap;
-    padding-top: 190px;
-    padding-bottom: 220px;
-}
-.containerr .box
-{
-    position: relative;
-    width: 250px;
-    height: 300px;
-    color: #fff;
-    
-    background: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 30px;
-    transition: 0.5s;
-}
-.containerr .box:hover
-{
-    transform: translate(-20px);
-}
-
-.containerr .box::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(315deg, #5a01ff, #901aff);
-}
-.containerr .box::after
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(105deg, #1b003a, #3a0046);
-    filter: blur(20px);
-}
-.containerr .box:nth-child(2)::before
-.containerr .box:nth-child(2)::after
-{
-    background: linear-gradient(315deg, #03a9f4, #ff0058);
-}
-.containerr .box:nth-child(3)::before
-.containerr.box:nth-child(3)::after
-{
-    background: linear-gradient(315deg, #4dff03, #00d0ff);   
-}
-.containerr .box span
-{
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background: rgb(9 10 15);
-    z-index: 2;
-}
-.containerr .box span::before
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255,255,255,0.1);
-    pointer-events: none;
-}
-.containerr .box .content
-{
-    position: relative;
-    z-index: 10;
-    padding: 20px 40px;
-}
-.containerr .box .content h2
-{
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-.containerr .box .content p
-{
-    font-size: 1.1em;
-    color: #fff;
-    margin-bottom: 10px;
-    line-height: 1.4em;
-}
-.containerr .box .content a{
-    display: inline-block;
-    font-size: 1.1em;
-    color: black;
-    background: #fff;
-    border-radius: 20px;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: 700;
-}
-.containerr .box .content:hover a{
-color: #fff;
-background: black;
-}
-
-/* ==========================================================================================================
 										FEATURES
    ========================================================================================================== */
 .curved-bg-div {
@@ -635,7 +510,7 @@ background: black;
   width: 100%;
   padding: 50px;
   height: 250px;
-  background-color: #090a0f;
+  background-color: #06002c;
   overflow: hidden;
 }
 .footer-outer .footer-inner {
@@ -1274,3 +1149,171 @@ background: black;
     text-align: center;
   }
 }
+
+/* ==========================================================================================================
+									DOWNLOAD PAGE
+   ========================================================================================================== */
+.containerzz
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.containerzz .cardz
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    margin: 45px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.containerzz .cardz .contentz
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+.contentz .cardz .contentz
+{
+    transform: translateY(0px);
+}
+.containerzz .cardz .contentz h2
+{
+position: absolute;
+top: -80px;
+right: 30px;
+font-size: 3em;
+font-weight: 600;
+color: rgba(138, 138, 138, 0.05);
+pointer-events: none;
+}
+.containerzz .cardz .contentz h3
+{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.containerzz .cardz .contentz p
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.containerzz .cardz .contentz a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow:  0 5px 15px;
+}
+
+.wapz{
+  font-size: 5rem;
+  margin-bottom: 10rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  -webkit-animation: fadein 5s;
+       -moz-animation: fadein 5s;
+        -ms-animation: fadein 5s;
+         -o-animation: fadein 5s;
+            animation: fadein 5s;
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 5; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 6; }
+}
+
+.blurred-wrapperrz{
+  height: 100vh;
+  background: url("../img/bg-2.jpg") center/cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+  animation: hue 10s infinite alternate;
+}
+
+.blurred-wrapperrz::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(2rem);
+  transform: scale(1.15);
+}
+
+.blurred-wrapperrz::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(2rem);
+  transform: scale(1.15);
+}
+
+/* Custom-Scroll-Bar */
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b6e3e8),to(#3260fb));
+  box-shadow: inset 2px 2px 2px rgba(255,255,255,0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-track{
+  background: linear-gradient(to right, #201c29, #201c29 0.8px, #100e17 1px ,#100e17);
